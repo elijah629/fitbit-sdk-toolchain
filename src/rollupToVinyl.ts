@@ -13,7 +13,7 @@ interface VinylPluginError {
 function isEmittedAsset(
   chunkOrAsset: rollup.OutputChunk | rollup.OutputAsset,
 ): chunkOrAsset is rollup.OutputAsset {
-  return !!(chunkOrAsset as rollup.OutputAsset).isAsset;
+  return (chunkOrAsset as rollup.OutputAsset).type === 'asset';
 }
 
 export default function rollupToVinyl(

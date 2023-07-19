@@ -7,7 +7,7 @@ import { normalizeToPOSIX } from '../../pathUtils';
 import { parseTsConfig } from './parse-tsconfig';
 import { default as tslib } from './tslib.const';
 
-import { Diagnostic, DiagnosticMessage } from '../../diagnostics';
+import { Diagnostic, DiagnosticMessage } from '../../diagnostics.js';
 
 type Filter = RegExp | RegExp[];
 

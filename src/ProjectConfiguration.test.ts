@@ -1,6 +1,6 @@
 import semver from 'semver';
 
-import { DiagnosticCategory } from './diagnostics';
+import { DiagnosticCategory } from './diagnostics.js';
 import ProjectConfiguration, * as config from './ProjectConfiguration';
 import sdkVersion from './sdkVersion';
 

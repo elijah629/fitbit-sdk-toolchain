@@ -4,7 +4,7 @@ import {
   Diagnostic,
   DiagnosticCategory,
   DiagnosticTarget,
-} from '../diagnostics';
+} from '../diagnostics.js';
 import indentString from './indentString';
 
 export function isPluginError(value: unknown): value is PluginError {

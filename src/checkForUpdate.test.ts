@@ -41,7 +41,7 @@ it('outputs an orange warning prompt if there is a new non-patch update', () => 
   // tslint:disable-next-line:max-line-length
   const expectedMessage =
     "You're targeting an older version of the Fitbit SDK. Consider updating to access new features.";
-  expect(consoleSpy).toBeCalledWith(chalk.keyword('orange')(expectedMessage));
+  expect(consoleSpy).toBeCalledWith(chalk.hex('#FFA500')(expectedMessage));
 });
 
 it('does not output a console message if there is no new update', () => {

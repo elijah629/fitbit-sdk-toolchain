@@ -2,7 +2,7 @@ import {
   Diagnostic,
   DiagnosticCategory,
   DiagnosticTarget,
-} from '../diagnostics';
+} from '../diagnostics.js';
 
 export default class BuildError extends Error {
   target?: DiagnosticTarget;

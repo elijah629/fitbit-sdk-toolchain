@@ -1,4 +1,4 @@
-import { DiagnosticCategory } from './diagnostics';
+import { DiagnosticCategory } from './diagnostics.js';
 import DiagnosticList from './DiagnosticList';
 
 it('pushes a message to the diagnostic list', () => {

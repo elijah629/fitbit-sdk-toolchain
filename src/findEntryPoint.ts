@@ -3,7 +3,7 @@ import fs from 'fs';
 import humanizeList from 'humanize-list';
 
 import BuildError from './util/BuildError';
-import { DiagnosticCategory, DiagnosticHandler } from './diagnostics';
+import { DiagnosticCategory, DiagnosticHandler } from './diagnostics.js';
 
 export default function findEntryPoint(
   possibilities: string[],

@@ -48,7 +48,7 @@ export enum DiagnosticTarget {
 export type DiagnosticHandler = (diagnostic: Diagnostic) => void;
 
 const consoleColors = {
-  [DiagnosticCategory.Warning]: chalk.keyword('orange'),
+  [DiagnosticCategory.Warning]: chalk.hex('#FFA500'),
   [DiagnosticCategory.Error]: chalk.red,
   [DiagnosticCategory.Message]: chalk,
   [DiagnosticCategory.Suggestion]: chalk,

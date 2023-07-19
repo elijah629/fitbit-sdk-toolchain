@@ -12,7 +12,7 @@ import {
   DiagnosticCategory,
   DiagnosticHandler,
   logDiagnosticToConsole,
-} from './diagnostics';
+} from './diagnostics.js';
 import rollupToVinyl from './rollupToVinyl';
 
 import forbidAbsoluteImport from './plugins/forbidAbsoluteImport';

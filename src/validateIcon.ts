@@ -5,7 +5,7 @@ import PluginError from 'plugin-error';
 import { PNG } from '@fitbit/pngjs';
 import Vinyl from 'vinyl';
 
-import { DiagnosticCategory, DiagnosticHandler } from './diagnostics';
+import { DiagnosticCategory, DiagnosticHandler } from './diagnostics.js';
 import ProjectConfiguration, { AppType } from './ProjectConfiguration';
 
 const EXPECTED_ICON_HEIGHT = 80;

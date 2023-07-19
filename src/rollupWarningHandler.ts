@@ -1,12 +1,12 @@
 import { relative } from 'path';
 
-import { RollupWarning, WarningHandler } from 'rollup';
+import { RollupWarning, WarningHandlerWithDefault } from 'rollup';
 
 import {
   DiagnosticCategory,
   DiagnosticMessage,
   logDiagnosticToConsole,
-} from './diagnostics';
+} from './diagnostics.js';
 
 export type CodeCategoryMap = { [code: string]: DiagnosticCategory | false };
 
@@ -22,8 +22,7 @@ const defaultCodeCategories: CodeCategoryMap = {
 };
 
 const messageFormatter: { [code: string]: (w: RollupWarning) => string } = {
-  UNRESOLVED_IMPORT: (w) =>
-    `${w.source} is imported by ${w.importer}, but could not be resolved`,
+  UNRESOLVED_IMPORT: (w) => `${w.message} ${w.url}`,
 };
 
 function relativeId(id: string) {
@@ -81,7 +80,7 @@ const rollupWarningToDiagnostic =
 export default function rollupWarningHandler({
   codeCategories = {} as CodeCategoryMap,
   onDiagnostic = logDiagnosticToConsole,
-}): WarningHandler {
+}): WarningHandlerWithDefault {
   const toDiagnostic = rollupWarningToDiagnostic({
     ...defaultCodeCategories,
     ...codeCategories,

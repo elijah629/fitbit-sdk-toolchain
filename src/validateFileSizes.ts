@@ -1,7 +1,7 @@
 import PluginError from 'plugin-error';
 import stream from 'stream';
 import Vinyl from 'vinyl';
-import { DiagnosticCategory, DiagnosticHandler } from './diagnostics';
+import { DiagnosticCategory, DiagnosticHandler } from './diagnostics.js';
 import humanizeByteCount from './util/humanizeByteCount';
 
 const PLUGIN_NAME = 'validateFileSizes';

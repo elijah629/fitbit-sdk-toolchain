@@ -1,5 +1,5 @@
 import BuildError from './BuildError';
-import { DiagnosticTarget } from '../diagnostics';
+import { DiagnosticTarget } from '../diagnostics.js';
 
 describe('is()', () => {
   it('returns false if error is not a BuildError', () =>

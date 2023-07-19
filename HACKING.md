@@ -1,5 +1,4 @@
-What's with the modules named .const.ts?
-----------------------------------------
+## What's with the modules named .const.ts?
 
 This is not just a convention; the naming scheme solves a real problem
 with the browser build. Those modules take a specific form: they export
@@ -20,8 +19,7 @@ being safe (or necessary) for processing by `aot-loader` when bundling.
 The toolchain browser bundle Webpack config has a rule to only apply
 `aot-loader` to files matching that pattern.
 
-When should I throw a BuildError?
----------------------------------
+## When should I throw a BuildError?
 
 Throwing a `BuildError` surfaces that error to the developer in a clear way
 and attributes the error to the component that was being built at the time.

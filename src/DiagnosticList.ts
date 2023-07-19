@@ -1,4 +1,4 @@
-import { Diagnostic, DiagnosticCategory } from './diagnostics';
+import { Diagnostic, DiagnosticCategory } from './diagnostics.js';
 
 export default class DiagnosticList {
   fatalError = false;

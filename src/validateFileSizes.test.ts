@@ -2,7 +2,7 @@ import { Readable } from 'stream';
 
 import Vinyl from 'vinyl';
 
-import { DiagnosticHandler } from './diagnostics';
+import { DiagnosticHandler } from './diagnostics.js';
 import validateFileSizes from './validateFileSizes';
 
 const TEST_FILENAME = 'test.bin';

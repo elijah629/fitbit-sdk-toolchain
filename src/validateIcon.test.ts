@@ -4,7 +4,7 @@ import { readFileSync } from 'fs';
 
 import Vinyl from 'vinyl';
 
-import { DiagnosticHandler } from './diagnostics';
+import { DiagnosticHandler } from './diagnostics.js';
 import ProjectConfiguration, { AppType } from './ProjectConfiguration';
 import validateIcon from './validateIcon';
 

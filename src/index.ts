@@ -28,7 +28,7 @@ import {
   DiagnosticCategory,
   DiagnosticHandler,
   DiagnosticTarget,
-} from './diagnostics';
+} from './diagnostics.js';
 import filterResourceTag from './filterResourceTag';
 import findEntryPoint from './findEntryPoint';
 import mergeStream from './mergeStream';

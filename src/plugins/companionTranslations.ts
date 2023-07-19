@@ -2,7 +2,7 @@ import { basename } from 'path';
 import { promisify } from 'util';
 
 import { LanguageTable, MessageTable } from '@fitbit-sdk/companion-gettext';
-import { default as _glob } from 'glob';
+import { glob } from 'glob';
 import humanizeList from 'humanize-list';
 import pofile from 'pofile';
 import { dataToEsm } from '@rollup/pluginutils';
@@ -11,7 +11,6 @@ import BuildError from '../util/BuildError';
 import { validateLanguageTag } from '../languageTag';
 import { Locales } from '../ProjectConfiguration';
 
-const glob = promisify(_glob);
 const loadPOFile = promisify(pofile.load);
 
 async function loadTranslations(filePath: string) {

@@ -1,7 +1,7 @@
 import PluginError from 'plugin-error';
 
 import pluginError from './pluginError';
-import { Diagnostic, DiagnosticMessage } from '../diagnostics';
+import { Diagnostic, DiagnosticMessage } from '../diagnostics.js';
 
 describe('isPluginError', () => {
   it.each([
